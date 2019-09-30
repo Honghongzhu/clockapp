@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">clockapp</string>
+    <string name="twelve">12H</string>
+    <string name="twentyfour">24H</string>
 </resources>
