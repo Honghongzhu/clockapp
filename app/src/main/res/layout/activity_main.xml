@@ -15,6 +15,16 @@
         app:layout_constraintBottom_toTopOf="@+id/button12H"
         app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/city1"
+                layout="@layout/time"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 
     <Button
