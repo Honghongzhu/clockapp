@@ -21,7 +21,8 @@
 
             <include
                 android:id="@+id/city1"
-                layout="@layout/time_twelve"/>
+                layout="@layout/time"/>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
