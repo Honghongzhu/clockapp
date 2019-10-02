@@ -15,12 +15,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/operaHouse"/>
 
-    <EditText
+    <TextClock
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="time"
+        android:textSize="30dp"
+        android:format12Hour="hh:mm a"
         app:layout_constraintTop_toBottomOf="@id/sydney"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/operaHouse"/>
