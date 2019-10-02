@@ -12,6 +12,7 @@ import android.widget.TextClock;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
     private Button twelveHButton;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         ConstraintLayout sydney = findViewById(R.id.city1);
         clock = sydney.findViewById(R.id.time);
-        clock.setTimeZone();
+        clock.setTimeZone("Australia/Sydney");
 
         twelveHButton = findViewById(R.id.button12H);
         twelveHButton.setOnClickListener(new View.OnClickListener() {
@@ -43,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!clock.is24HourModeEnabled())
-                    clock.setFormat12Hour("hh:mm");
+                    clock.setFormat12Hour("HH:mm");
                 else
-                    clock.setFormat24Hour("hh:mm");
+                    clock.setFormat24Hour("HH:mm");
             }
         });
     }
