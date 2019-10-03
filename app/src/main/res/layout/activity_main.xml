@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -17,12 +16,44 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
 
             <include
-                android:id="@+id/city1"
-                layout="@layout/time"/>
+                android:id="@+id/sydneyTime"
+                layout="@layout/time"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
+            <include
+                android:id="@+id/newyorkTime"
+                layout="@layout/time"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sydneyTime"/>
+
+            <include
+                android:id="@+id/londonTime"
+                layout="@layout/time"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newyorkTime"/>
+
+            <include
+                android:id="@+id/tokyoTime"
+                layout="@layout/time"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/londonTime"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

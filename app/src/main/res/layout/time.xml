@@ -7,32 +7,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/sydney"
+        android:id="@+id/city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Sydney"
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/operaHouse"/>
+        app:layout_constraintEnd_toStartOf="@id/image"/>
 
     <TextClock
         android:id="@+id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@id/sydney"
+        app:layout_constraintTop_toBottomOf="@id/city"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/operaHouse"/>
+        app:layout_constraintEnd_toStartOf="@id/image"/>
 
     <ImageView
-        android:id="@+id/operaHouse"
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/sydney"
-        app:layout_constraintStart_toEndOf="@id/sydney"
+        app:layout_constraintTop_toTopOf="@id/city"
+        app:layout_constraintStart_toEndOf="@id/city"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/time"
-        android:src="@drawable/sydney"/>
+        app:layout_constraintBottom_toBottomOf="@id/time"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

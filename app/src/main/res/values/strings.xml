@@ -3,4 +3,7 @@
     <string name="twelve">12H</string>
     <string name="twentyfour">24H</string>
     <string name="Sydney">Sydney</string>
+    <string name="New_York">New York</string>
+    <string name="London">London</string>
+    <string name="Tokyo">Tokyo</string>
 </resources>
