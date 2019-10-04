@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:gravity="center"
+        android:format12Hour="hh:mm a"
         app:layout_constraintTop_toBottomOf="@id/city"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/image"/>

@@ -121,27 +121,39 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+    
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@id/scrollView"/>
 
     <Button
         android:id="@+id/button12H"
-        android:layout_width="205dp"
+        android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:text="@string/twelve"
         android:textSize="25sp"
         android:background="#faaa5a"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button24H"/>
 
     <Button
         android:id="@+id/button24H"
-        android:layout_width="205dp"
+        android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:text="@string/twentyfour"
         android:textSize="25sp"
         android:background="#faaa5a"
+        android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button12H" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
