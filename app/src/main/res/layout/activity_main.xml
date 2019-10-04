@@ -10,7 +10,8 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:paddingTop="70dp"
+        android:paddingBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/button12H">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -128,6 +129,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/twelve"
         android:textSize="25sp"
+        android:background="#faaa5a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button24H"/>
 
@@ -138,6 +140,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/twentyfour"
         android:textSize="25sp"
+        android:background="#faaa5a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/button12H" />
 
