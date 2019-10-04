@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         barcelona_name.setText(R.string.Barcelona);
         barcelona_clock = barcelonaTime.findViewById(R.id.time);
         barcelona_clock.setTimeZone("Europe/Barcelona");
-        final ImageView barcelona_image = barcelonaTime.findViewById(R.id.image);
+        ImageView barcelona_image = barcelonaTime.findViewById(R.id.image);
         barcelona_image.setImageResource(R.drawable.barcelona);
 
         ConstraintLayout berlinTime = findViewById(R.id.berlinTime);
@@ -77,21 +77,12 @@ public class MainActivity extends AppCompatActivity {
         twelveHButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (sydney_clock.is24HourModeEnabled()){
-                    sydney_clock.setFormat24Hour("hh:mm a");
-                    newyork_clock.setFormat24Hour("hh:mm a");
-                    london_clock.setFormat24Hour("hh:mm a");
-                    tokyo_clock.setFormat24Hour("hh:mm a");
-                    berlin_clock.setFormat24Hour("hh:mm a");
-                    barcelona_clock.setFormat12Hour("hh:mm a");
-                }
-                else
-                    sydney_clock.setFormat12Hour("hh:mm a");
-                    newyork_clock.setFormat12Hour("hh:mm a");
-                    london_clock.setFormat12Hour("hh:mm a");
-                    tokyo_clock.setFormat12Hour("hh:mm a");
-                    berlin_clock.setFormat12Hour("hh:mm a");
-                    barcelona_clock.setFormat12Hour("hh:mm a");
+                sydney_clock.setFormat12Hour("hh:mm a");
+                newyork_clock.setFormat12Hour("hh:mm a");
+                london_clock.setFormat12Hour("hh:mm a");
+                tokyo_clock.setFormat12Hour("hh:mm a");
+                berlin_clock.setFormat12Hour("hh:mm a");
+                barcelona_clock.setFormat12Hour("hh:mm a");
             }
         });
 
@@ -99,22 +90,12 @@ public class MainActivity extends AppCompatActivity {
         twentyfourHButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!sydney_clock.is24HourModeEnabled()) {
-                    sydney_clock.setFormat12Hour("HH:mm");
-                    newyork_clock.setFormat12Hour("HH:mm");
-                    london_clock.setFormat12Hour("HH:mm");
-                    tokyo_clock.setFormat12Hour("HH:mm");
-                    berlin_clock.setFormat12Hour("HH:mm");
-                    barcelona_clock.setFormat12Hour("HH:mm");
-                }
-                else {
-                    sydney_clock.setFormat24Hour("HH:mm");
-                    newyork_clock.setFormat24Hour("HH:mm");
-                    london_clock.setFormat24Hour("HH:mm");
-                    tokyo_clock.setFormat24Hour("HH:mm");
-                    berlin_clock.setFormat24Hour("HH:mm");
-                    barcelona_clock.setFormat24Hour("HH:mm");
-                }
+                sydney_clock.setFormat12Hour("HH:mm");
+                newyork_clock.setFormat12Hour("HH:mm");
+                london_clock.setFormat12Hour("HH:mm");
+                tokyo_clock.setFormat12Hour("HH:mm");
+                berlin_clock.setFormat12Hour("HH:mm");
+                barcelona_clock.setFormat12Hour("HH:mm");
             }
         });
     }
