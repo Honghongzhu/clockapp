@@ -6,4 +6,6 @@
     <string name="New_York">New York</string>
     <string name="London">London</string>
     <string name="Tokyo">Tokyo</string>
+    <string name="Berlin">Berlin</string>
+    <string name="Barcelona">Barcelona</string>
 </resources>

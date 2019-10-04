@@ -10,10 +10,8 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button12H"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/button12H">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,65 +21,101 @@
             <include
                 android:id="@+id/sydneyTime"
                 layout="@layout/time"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/space1"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="25dp"
                 android:background="@android:color/white"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/sydneyTime"/>
+                app:layout_constraintTop_toBottomOf="@id/sydneyTime" />
 
             <include
                 android:id="@+id/newyorkTime"
                 layout="@layout/time"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/space1"/>
+                app:layout_constraintTop_toBottomOf="@+id/space1" />
 
             <View
                 android:id="@+id/space2"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="25dp"
                 android:background="@android:color/white"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/newyorkTime"/>
+                app:layout_constraintTop_toBottomOf="@id/newyorkTime" />
 
             <include
                 android:id="@+id/londonTime"
                 layout="@layout/time"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/space2"/>
+                app:layout_constraintTop_toBottomOf="@+id/space2" />
 
             <View
                 android:id="@+id/space3"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="25dp"
                 android:background="@android:color/white"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/londonTime"/>
+                app:layout_constraintTop_toBottomOf="@id/londonTime" />
+
+            <include
+                android:id="@+id/barcelonaTime"
+                layout="@layout/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space3" />
+
+            <View
+                android:id="@+id/space4"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/barcelonaTime" />
+
+            <include
+                android:id="@+id/berlinTime"
+                layout="@layout/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space4" />
+
+            <View
+                android:id="@+id/space5"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/berlinTime" />
 
             <include
                 android:id="@+id/tokyoTime"
                 layout="@layout/time"
-                android:layout_width = "wrap_content"
-                android:layout_height = "wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/space3"/>
+                app:layout_constraintTop_toBottomOf="@+id/space5" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
