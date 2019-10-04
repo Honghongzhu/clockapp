@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -28,6 +29,15 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
+            <View
+                android:id="@+id/space1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sydneyTime"/>
+
             <include
                 android:id="@+id/newyorkTime"
                 layout="@layout/time"
@@ -35,7 +45,16 @@
                 android:layout_height = "wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sydneyTime"/>
+                app:layout_constraintTop_toBottomOf="@+id/space1"/>
+
+            <View
+                android:id="@+id/space2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/newyorkTime"/>
 
             <include
                 android:id="@+id/londonTime"
@@ -44,7 +63,16 @@
                 android:layout_height = "wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/newyorkTime"/>
+                app:layout_constraintTop_toBottomOf="@+id/space2"/>
+
+            <View
+                android:id="@+id/space3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/londonTime"/>
 
             <include
                 android:id="@+id/tokyoTime"
@@ -53,7 +81,7 @@
                 android:layout_height = "wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/londonTime"/>
+                app:layout_constraintTop_toBottomOf="@+id/space3"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -65,6 +93,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:text="@string/twelve"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button24H"/>
 
@@ -74,6 +103,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:text="@string/twentyfour"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/button12H" />
 

@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         london_name = londonTime.findViewById(R.id.city);
         london_name.setText(R.string.London);
         london_clock = londonTime.findViewById(R.id.time);
-        london_clock.setTimeZone("England/London");
+        london_clock.setTimeZone("Europe/London");
         london_image = londonTime.findViewById(R.id.image);
         london_image.setImageResource(R.drawable.london);
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         tokyo_name = tokyoTime.findViewById(R.id.city);
         tokyo_name.setText(R.string.Tokyo);
         tokyo_clock = tokyoTime.findViewById(R.id.time);
-        tokyo_clock.setTimeZone("Japan/Tokyo");
+        tokyo_clock.setTimeZone("Asia/Tokyo");
         tokyo_image = tokyoTime.findViewById(R.id.image);
         tokyo_image.setImageResource(R.drawable.japan);
 
@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                     sydney_clock.setFormat12Hour("hh:mm a");
-                    newyork_clock.setFormat24Hour("hh:mm a");
-                    london_clock.setFormat24Hour("hh:mm a");
-                    tokyo_clock.setFormat24Hour("hh:mm a");
+                    newyork_clock.setFormat12Hour("hh:mm a");
+                    london_clock.setFormat12Hour("hh:mm a");
+                    tokyo_clock.setFormat12Hour("hh:mm a");
             }
         });
 
@@ -85,10 +85,18 @@ public class MainActivity extends AppCompatActivity {
         twentyfourHButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!sydney_clock.is24HourModeEnabled())
+                if(!sydney_clock.is24HourModeEnabled()) {
                     sydney_clock.setFormat12Hour("HH:mm");
-                else
+                    newyork_clock.setFormat12Hour("HH:mm");
+                    london_clock.setFormat12Hour("HH:mm");
+                    tokyo_clock.setFormat12Hour("HH:mm");
+                }
+                else {
                     sydney_clock.setFormat24Hour("HH:mm");
+                    newyork_clock.setFormat24Hour("HH:mm");
+                    london_clock.setFormat24Hour("HH:mm");
+                    tokyo_clock.setFormat24Hour("HH:mm");
+                }
             }
         });
     }
